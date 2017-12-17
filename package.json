@@ -1,0 +1,20 @@
+{
+  "name": "m8a1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammadhunan97/m8a1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammadhunan97/m8a1/issues"
+  },
+  "homepage": "https://github.com/Mohammadhunan97/m8a1#readme"
+}
