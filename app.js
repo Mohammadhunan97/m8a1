@@ -21,7 +21,7 @@ app.use(passport.session());
 var connection = mysql.createConnection({
 	host : 'localhost',
 	user : 'root',
-	password: 'shoebilljs123'
+	password: key.db.password
 });
 
 //must create the db and tables first using the command source model/schema.sql
