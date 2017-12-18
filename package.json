@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/Mohammadhunan97/m8a1/issues"
   },
-  "homepage": "https://github.com/Mohammadhunan97/m8a1#readme"
+  "homepage": "https://github.com/Mohammadhunan97/m8a1#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1"
+  }
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Node Note Taker</title>
+	<style>
+	textarea{
+		width: 50vw;
+	    height: 100px;
+	    border-radius: 5px;
+	    border: 1px solid black;
+	}
+	</style>
+</head>
+<body>
+
+	<h1>Node Note Taker</h1>
+
+	<p>Create a new note:</p>
+	<form action="/note/new" method="post">
+		<textarea name="description" placeholder="write note description"></textarea>
+		<input type="submit"/>
+	</form>
+
+	<p>Your Notes:</p>
+	<ul>
+	<%  JSON.parse(notes).forEach((note)=> { %>
+			<li><%= note.description %> 
+				<a href="/note/update/<%= note.id%>">Update this note</a>
+				<button class="delete-btn" id="<%= note.id%>">Delete this note</button>
+			</li>
+	<% }) %> 
+	</ul>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function(){
+		$('.delete-btn').click(function(){
+			console.log($(this).attr('id'));
+			fetch('/note/delete/'+ $(this).attr('id'),{method: 'delete'}).then(()=>{
+				console.log('baz')
+				location.reload();
+			})
+		})
+	});
+</script>
+</body>
+</html>
+

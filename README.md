@@ -1,5 +1,6 @@
 # M8A1 Create a GUI Database App
 
+## Assignment information
 Introduction to the Activity
 
 To this point, you’ve analyzed database requirements, designed and normalized a database, and practiced designing graphical interfaces for your database app.  As a professional software developer, there is rarely something more satisfying than seeing an app you’ve spent months working on finally put into operation.  Technology is supposed to make people’s lives easier and it’s great to sit back and watch the users’ lives enhance by all your hard work.
@@ -18,3 +19,7 @@ Zip all code together and submit both the Word document and the ZIP file contain
 
 Compose your work in a .doc or .docx file type using a word processor (such as Microsoft Word, etc.) and save it frequently to your computer. For those assignments that are not written essays and require uploading images or PowerPoint slides, please follow uploading guidelines provided by your instructor.
 
+
+## Direction to use application 
+* mysql -u root -p
+* source model/schema.sql; 

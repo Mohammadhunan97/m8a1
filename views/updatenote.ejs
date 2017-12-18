@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Node Note Taker</title>
+	<style>
+	textarea{
+		width: 50vw;
+	    height: 100px;
+	    border-radius: 5px;
+	    border: 1px solid black;
+	}
+	</style>
+</head>
+<body>
+
+	<h1>Node Note Taker</h1>
+	<a href="/home">Return Home</a>
+
+	<p>Update this note:</p>
+	<%  JSON.parse(notes).forEach((note)=> { %>
+	<form action="/note/update/<%= note.id %> " method="post">
+		<textarea name="description"><%= note.description %></textarea>
+		<input type="submit"/>
+	</form>
+	<% }) %> 
+
+
+
+</body>
+</html>
+
