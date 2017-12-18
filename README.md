@@ -23,3 +23,5 @@ Compose your work in a .doc or .docx file type using a word processor (such as M
 ## Direction to use application 
 * mysql -u root -p
 * source model/schema.sql; 
+* alter information in key.js to your specific info
+* node app.js
